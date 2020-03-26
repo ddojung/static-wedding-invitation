@@ -1,0 +1,42 @@
+.main-img {
+  height: 100%;
+  background: url('https://firebasestorage.googleapis.com/v0/b/wedding-invi.appspot.com/o/main.png?alt=media&token=d79de6d7-e67a-4091-b63a-7ab5812e7a10');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-color: #fbcc5d;
+}
+
+.main-desc-wrap {
+  position: absolute;
+  top: 5%;
+  width: 100%;
+  text-align: center;
+  font-family: Saenal, NanumSquare;
+  color: #2e2e2e;
+}
+
+.wedding-date {
+  font-size: 3.5rem;
+}
+
+.wedding-time {
+  font-size: 2rem;
+}
+
+.map-button-wrap {
+  position: absolute;
+  bottom: 10%;
+  width: 100%;
+  text-align: center;
+}
+
+.map-button {
+  font-family: NanumSquare;
+  font-size: 1rem;
+  padding: .6rem 1rem .5rem;
+  border: 1px solid #AAA;
+  border-radius: .4rem;
+  background-color: #f1f1f1;
+  color: #4a4a4a;
+}

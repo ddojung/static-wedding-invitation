@@ -4,19 +4,42 @@
   "description": "wedding invitation mobile version",
   "main": "index.js",
   "scripts": {
-    "build": "rm -rf dist && NODE_ENV=production webpack"
+    "build": "rm -rf public && NODE_ENV=production webpack",
+    "dev": "webpack-dev-server"
   },
   "author": "ddojung",
   "license": "ISC",
   "devDependencies": {
+    "@babel/core": "^7.8.7",
+    "@babel/preset-env": "^7.8.7",
+    "@types/swiper": "^5.2.1",
+    "@typescript-eslint/eslint-plugin": "^2.25.0",
+    "@typescript-eslint/parser": "^2.25.0",
+    "babel-loader": "^8.0.6",
     "css-loader": "^3.4.2",
+    "eslint": "^6.8.0",
+    "eslint-config-prettier": "^6.10.1",
+    "eslint-plugin-prettier": "^3.1.2",
     "html-inline-css-webpack-plugin": "^1.8.0",
     "html-webpack-inline-source-plugin": "0.0.10",
     "html-webpack-plugin": "^3.2.0",
     "mini-css-extract-plugin": "^0.9.0",
+    "prettier": "^2.0.2",
+    "ts-loader": "^6.2.1",
     "ts-node": "^8.6.2",
     "typescript": "^3.8.3",
+    "url-loader": "^4.0.0",
     "webpack": "^4.42.0",
-    "webpack-cli": "^3.3.11"
+    "webpack-cli": "^3.3.11",
+    "webpack-dev-server": "^3.10.3"
+  },
+  "browserslist": [
+    ">0.2%",
+    "not dead",
+    "not ie <= 11",
+    "not op_mini all"
+  ],
+  "dependencies": {
+    "swiper": "^5.3.6"
   }
 }

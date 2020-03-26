@@ -1,0 +1,39 @@
+.notice-container {
+  font-family: NanumMyeongjo;
+  margin: 2rem 0;
+  height: calc(100% - 4rem);
+  overflow-y: scroll;
+}
+
+.notice-title {
+  display: inline-flex;
+  align-items: center;
+}
+
+.notice-title::before {
+  content: '';
+  background: url('https://firebasestorage.googleapis.com/v0/b/wedding-invi.appspot.com/o/flower-left.svg?alt=media&token=a389cb95-8a7f-4010-95a1-89ff80391dec') no-repeat;
+  background-size: contain;
+  width: 2.5rem;
+  height: 1.5rem;
+  display: inline-block;
+}
+
+.notice-title::after {
+  content: '';
+  background: url('https://firebasestorage.googleapis.com/v0/b/wedding-invi.appspot.com/o/flower-right.svg?alt=media&token=eaff74a2-5ef7-472b-9fa1-a45e1ea16399') no-repeat;
+  background-size: contain;
+  background-position: right;
+  width: 2.5rem;
+  height: 1.5rem;
+  display: inline-block;
+}
+
+.notice-text {
+  line-height: 1.5rem;
+  margin-top: 1rem;
+}
+
+.map {
+  width: 70%;
+}
