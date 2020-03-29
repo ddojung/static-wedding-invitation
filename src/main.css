@@ -24,19 +24,86 @@
   font-size: 2rem;
 }
 
-.map-button-wrap {
+.map-button-wrap>button {
+  background: white;
+  border: 2px solid #fcce61;
+  border-radius: 100%;
+  padding: .5rem;
   position: absolute;
-  bottom: 10%;
-  width: 100%;
-  text-align: center;
+  bottom: 5rem;
+  box-shadow: 1px 1px 10px 0px #696969;
+  cursor: pointer;
+}
+
+.map-button-wrap>button:hover {
+  background: #f7eee2;
+}
+
+.map-button-wrap>button>img {
+  width: 3rem;
+  height: 3rem;
+}
+
+.direction-button {
+  right: 2rem;
 }
 
 .map-button {
-  font-family: NanumSquare;
-  font-size: 1rem;
-  padding: .6rem 1rem .5rem;
-  border: 1px solid #AAA;
-  border-radius: .4rem;
-  background-color: #f1f1f1;
-  color: #4a4a4a;
+  left: 2rem;
+}
+
+.map {
+  width: 100%;
+}
+
+.directions-text {
+  line-height: 1.5;
+}
+
+.directions-text p {
+  margin-top: .5rem;
+}
+
+.close-button {
+  position: absolute;
+  top: 1.8rem;
+  right: 2rem;
+  font-size: 1.3rem;
+  border: none;
+  background: transparent;
+  color: #333;
+  cursor: pointer;
+}
+
+.directions-container {
+  max-width: 32rem;
+  background: antiquewhite;
+  margin: 0 auto;
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+  border-radius: 2rem;
+  padding: 2rem 1rem;
+  text-align: center;
+}
+
+.direction-scrollable-wrap {
+  overflow-y: auto;
+}
+
+@media(max-width: 500px) {
+  .directions-container {
+    max-width: 25rem;
+    max-height: 40rem;
+  }
+}
+
+@media(max-width: 400px) {
+  .directions-container {
+    max-width: 19rem;
+    max-height: 30rem;
+  }
+  .direction-scrollable-wrap {
+    height: 28rem;
+  }
 }

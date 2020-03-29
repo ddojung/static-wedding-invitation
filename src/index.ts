@@ -6,15 +6,28 @@ import './notice.css';
 
 import Swiper from 'swiper';
 
-const CURRENT_LOCATION = {
-  'left': 0,
-  'middle': 1,
-  'right': 2
-};
+const fixedContainer = document.querySelector<HTMLDivElement>('.fixed-container');
+const directionOpenButton = document.querySelector<HTMLButtonElement>('#directionOpenButton');
+const directionCloseButton = document.querySelector<HTMLButtonElement>('#directionCloseButton');
 
-let current = CURRENT_LOCATION.middle;
-let touchStartPoint = 0;
-const clientWidth = document.body.clientWidth;
+const openFixedContainer = () => {
+  if (!fixedContainer || !directionOpenButton) {
+    return;
+  }
+  fixedContainer.style.display = 'block';
+  setTimeout(() => {
+    fixedContainer.style.opacity = '1';
+  });
+};
+const closeFixedContainer = () => {
+  if (!fixedContainer || !directionOpenButton) {
+    return;
+  }
+  fixedContainer.style.opacity = '0';
+  setTimeout(() => { // transition에 의해 1s 후 opacity가 0이되면 none 처리
+    fixedContainer.style.display = 'none';
+  }, 1000);
+};
 
 document.body.onload = () => {
   new Swiper('.container', {
@@ -26,23 +39,12 @@ document.body.onload = () => {
 
     initialSlide: 1,
   });
+
+  directionOpenButton?.addEventListener('click', openFixedContainer);
+  directionCloseButton?.addEventListener('click', closeFixedContainer);
 };
-// document.body.ontouchstart = (event) => {
-//   touchStartPoint = event.touches[0].screenX;
-// };
-// document.body.ontouchend = (event) => {
-//   const moving = event.changedTouches[0].screenX - touchStartPoint;
 
-//   if (moving < 0) {
-//     current += 1;
-//     document.body.style.transform = `translateX(${String(-(clientWidth * current))}px)`;
-//   }
-//   if (moving > 0) {
-//     current -= 1;
-//     document.body.style.transform = `translateX(${String(-(clientWidth * current))}px)`;
-//   }
-// };
 
-// const initDocument = () => {
-//   document.body.style.transform = `translateX(${String(-clientWidth)}px)`;
-// };
+document.body.onclose = () => {
+  directionOpenButton?.removeEventListener('click', openFixedContainer);
+};

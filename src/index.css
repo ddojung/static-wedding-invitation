@@ -1,22 +1,22 @@
 @font-face {
   font-family: 'NanumMyeongjo';
-  src: url('../assets/NanumMyeongjo.ttf') format('truetype');
+  src: url('../assets/fonts//NanumMyeongjo.ttf') format('truetype');
 }
 
 @font-face {
   font-family: 'Saenal';
-  src: url('../assets/Saenal.ttf') format('truetype');
+  src: url('../assets/fonts//Saenal.ttf') format('truetype');
 }
 
 @font-face {
   font-family: 'NanumSquare';
-  src: url('../assets/NanumSquareRoundB.ttf') format('truetype');
+  src: url('../assets/fonts//NanumSquareRoundB.ttf') format('truetype');
   font-weight: 700;
 }
 
 @font-face {
   font-family: 'NanumSquare';
-  src: url('../assets/NanumSquareRoundR.ttf') format('truetype');
+  src: url('../assets/fonts//NanumSquareRoundR.ttf') format('truetype');
 }
 
 html, body, main {
@@ -24,8 +24,15 @@ html, body, main {
   margin: 0;
 }
 
+@media (max-width: 700px) {
+  html {
+    font-size: 14px;
+  }
+}
+
 body {
   background: antiquewhite;
+  font-family: NanumMyeongjo;
 }
 
 p {
@@ -48,4 +55,16 @@ p {
 
 .swiper-pagination-bullet-active {
   background: #E91E63;
+}
+
+.fixed-container {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  z-index: 10;
+  background: #0000009c;
+  display: none;
+  opacity: 0;
+  transition: opacity 1s;
 }

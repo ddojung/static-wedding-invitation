@@ -2,6 +2,7 @@
   font-family: NanumMyeongjo;
   margin: 2rem 0;
   height: calc(100% - 4rem);
+  line-height: 2.5rem;
   overflow-y: scroll;
 }
 
@@ -30,10 +31,14 @@
 }
 
 .notice-text {
-  line-height: 1.5rem;
-  margin-top: 1rem;
+  margin-top: 2rem;
+  padding: 0 1rem;
 }
 
-.map {
-  width: 70%;
+.notice-footer {
+  border-top: 1px dashed #f1c68e;
+  margin: 2rem 1rem;
+  padding-top: 2rem;
+  font-size: 1.2rem;
+  line-height: 2.5rem;
 }
