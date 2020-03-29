@@ -68,3 +68,11 @@ p {
   opacity: 0;
   transition: opacity 1s;
 }
+
+.visible-fixed-container {
+  display: block;
+}
+
+.opacity-fixed-container {
+  opacity: 1;
+}

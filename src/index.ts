@@ -6,7 +6,7 @@ import './notice.css';
 
 import Swiper from 'swiper';
 
-const fixedContainer = document.querySelector<HTMLDivElement>('.fixed-container');
+const fixedContainer = document.querySelector('.fixed-container');
 const directionOpenButton = document.querySelector<HTMLButtonElement>('#directionOpenButton');
 const directionCloseButton = document.querySelector<HTMLButtonElement>('#directionCloseButton');
 
@@ -14,18 +14,18 @@ const openFixedContainer = () => {
   if (!fixedContainer || !directionOpenButton) {
     return;
   }
-  fixedContainer.style.display = 'block';
+  fixedContainer.classList.add('visible-fixed-container');
   setTimeout(() => {
-    fixedContainer.style.opacity = '1';
+    fixedContainer.classList.add('opacity-fixed-container');
   });
 };
 const closeFixedContainer = () => {
   if (!fixedContainer || !directionOpenButton) {
     return;
   }
-  fixedContainer.style.opacity = '0';
+  fixedContainer.classList.remove('opacity-fixed-container');
   setTimeout(() => { // transition에 의해 1s 후 opacity가 0이되면 none 처리
-    fixedContainer.style.display = 'none';
+    fixedContainer.classList.remove('visible-fixed-container');
   }, 1000);
 };
 
