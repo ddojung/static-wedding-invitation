@@ -4,7 +4,15 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <title>오성종 ♥︎ 이소미 결혼식에 초대합니다</title>
+  <meta property="og:title" content="오성종 ♥︎ 이소미" />
+  <meta property="og:type" content="website" />
+  <meta property="og:description" content="2020년 5월 16일 토요일, 결혼합니다." />
+  <meta property="og:image"
+    content="https://firebasestorage.googleapis.com/v0/b/wedding-invi.appspot.com/o/thumbnail.png?alt=media&token=5ae13686-7ae1-42ec-9fff-f744a51b80b2" />
+  <link rel="icon"
+    href="https://firebasestorage.googleapis.com/v0/b/wedding-invi.appspot.com/o/heart.ico?alt=media&token=839112a4-8514-41ac-b125-3d03d1faa3e7"
+    type="image/x-icon" />
 </head>
 
 <body>
@@ -28,14 +36,16 @@
             <button class="map-button">
               <img
                 src="https://firebasestorage.googleapis.com/v0/b/wedding-invi.appspot.com/o/map.svg?alt=media&token=58523110-3c51-45a9-b4cd-96504732458e"
-                alt="식장 지도 보기">
+                alt="예식장 지도">
             </button>
-            <button id="directionOpenButton" class="direction-button">
+            <button id="direction-open-button" class="direction-button">
               <img
                 src="https://firebasestorage.googleapis.com/v0/b/wedding-invi.appspot.com/o/placeholder.svg?alt=media&token=47b3d68b-2c8f-4097-815d-be43c062d943"
                 alt="오시는 길">
             </button>
           </div>
+          <div class="confetti"></div>
+          <div class="heart">♥︎</div>
         </div>
       </div>
 
@@ -72,14 +82,14 @@
     <div class="swiper-pagination"></div>
   </div>
 
-  <div class="fixed-container">
-    <div class="directions-container">
-      <button id="directionCloseButton" class="close-button">✕</button>
+  <div class="direction-container">
+    <div class="directions-wrap">
+      <button id="direction-close-button" class="close-button">✕</button>
       <p class="notice-title">오시는 길</p>
       <div class="direction-scrollable-wrap">
-        <img class="map"
-          src="https://firebasestorage.googleapis.com/v0/b/wedding-invi.appspot.com/o/map.png?alt=media&token=ac320770-70a8-4d45-b8b8-78b388ba4a7e"
-          alt="오시는길">
+        <div id="map">
+          <a class="goToNaverMap" href="http://naver.me/x5KxeX8e" target="_blank">네이버에서 보기</a>
+        </div>
         <div class="directions-text">
           <p><b>북한산 포인트빌</b></p>
           <p><b>주소: 경기 고양시 덕양구 북한산로 473-90</b></p>
@@ -91,8 +101,18 @@
     </div>
   </div>
 
+  <!-- 
+  <div class="house-map-container">
+    <button id="direction-close-button" class="close-button">✕</button>
+    <div class="direction-scrollable-wrap">
+      <img
+        src="https://firebasestorage.googleapis.com/v0/b/wedding-invi.appspot.com/o/house-map.png?alt=media&token=1cf95ac1-c2d9-45ee-9964-9dcc39db7580"
+        alt="예식장 지도">
+    </div> -->
 
   <div class="gallery-swiper"></div>
+
+  <script type="text/javascript" src="https://openapi.map.naver.com/openapi/v3/maps.js?ncpClientId=va5ltn1yl3"></script>
 </body>
 
 </html>

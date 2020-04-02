@@ -31,18 +31,10 @@ module.exports = {
         use: [MiniCssExtractPlugin.loader, "css-loader"],
       },
       {
-        test: /\.ts?$/,
-        exclude: /node_modules/,
-        use: "ts-loader",
-      },
-      {
         test: /\.ts$/,
         exclude: /node_modules/,
         use: {
           loader: "babel-loader",
-          options: {
-            presets: ["@babel/preset-env"],
-          },
         },
       },
       {
