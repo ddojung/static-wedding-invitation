@@ -2,9 +2,10 @@
 @import './main.css';
 @import './notice.css';
 @import './heart.css';
+@import './gallery.css';
 @font-face {
   font-family: 'NanumMyeongjo';
-  src: url('../../assets/fonts//NanumMyeongjo.ttf') format('truetype');
+  src: url('../../assets/fonts//NanumMyeongjo.ttf') format('truetype'), url('../../assets/fonts//NanumMyeongjo.otf') format('opentype');
 }
 
 @font-face {
@@ -36,7 +37,7 @@ html, body, main {
 
 body {
   background: antiquewhite;
-  font-family: NanumMyeongjo;
+  font-family: NanumMyeongjo, serif;
 }
 
 p {
@@ -59,4 +60,54 @@ p {
 
 .swiper-pagination-bullet-active {
   background: #E91E63;
+}
+
+.swiper-button-wrap {
+  max-width: 46rem;
+  position: relative;
+  top: -50%;
+  margin: 0 auto;
+}
+
+.swiper-button-wrap>.swiper-button-next, .swiper-button-wrap>.swiper-button-prev {
+  color: #fff;
+  user-select: none;
+}
+
+.swiper-button-prev.swiper-button-disabled, .swiper-button-next.swiper-button-disabled {
+  color: transparent;
+}
+
+.content-title {
+  display: inline-flex;
+  align-items: center;
+  border-bottom: 1px solid #DDD;
+}
+
+.content-title::before {
+  content: '';
+  background: url('https://firebasestorage.googleapis.com/v0/b/wedding-invi.appspot.com/o/flower-left.svg?alt=media&token=a389cb95-8a7f-4010-95a1-89ff80391dec') no-repeat;
+  background-size: contain;
+  width: 2.5rem;
+  height: 1.5rem;
+  display: inline-block;
+}
+
+.content-title::after {
+  content: '';
+  background: url('https://firebasestorage.googleapis.com/v0/b/wedding-invi.appspot.com/o/flower-right.svg?alt=media&token=eaff74a2-5ef7-472b-9fa1-a45e1ea16399') no-repeat;
+  background-size: contain;
+  background-position: right;
+  width: 2.5rem;
+  height: 1.5rem;
+  display: inline-block;
+}
+
+.swiper-lazy-preloader-wrap {
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-lazy-preloader {
+  --swiper-preloader-color: gray;
 }

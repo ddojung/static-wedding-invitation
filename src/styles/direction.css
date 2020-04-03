@@ -17,3 +17,96 @@
 .opacity-direction-container {
   opacity: 1;
 }
+
+.direction-title-wrap {
+  text-align: center;
+}
+
+.directions-text {
+  padding-left: .5rem;
+  line-height: 1.5;
+}
+
+.directions-text p {
+  margin-top: .5rem;
+}
+
+.close-button {
+  position: absolute;
+  top: -2.5rem;
+  right: 0;
+  font-size: 1.7rem;
+  border: none;
+  background: transparent;
+  color: white;
+  cursor: pointer;
+}
+
+.directions-wrap {
+  max-width: 32rem;
+  background: white;
+  margin: 0 auto;
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+  padding: 2rem 1rem;
+  box-shadow: 5px 5px 8px 0 #4e4e4e;
+}
+
+.direction-scrollable-wrap {
+  margin-top: 1rem;
+  overflow-y: auto;
+}
+
+#map {
+  width: 30rem;
+  height: 20rem;
+  margin: 0 auto;
+}
+
+.place-title {
+  padding: .5rem 1rem;
+  font-size: 1.2rem;
+  display: block;
+}
+
+.goToNaverMap {
+  background: white;
+  text-decoration: none;
+  color: #20c120;
+  font-family: NauumSquare;
+  font-weight: 700;
+  font-size: 1.1rem;
+  border: 1px solid;
+  padding: .5rem;
+  display: block;
+  text-align: center;
+  margin-top: .5rem;
+  border-radius: .4rem;
+}
+
+@media(max-width: 500px) {
+  .directions-wrap {
+    margin: 0 1rem;
+  }
+  #map {
+    width: 25rem;
+  }
+}
+
+@media(max-width: 400px) {
+  #map {
+    width: 22rem;
+    height: 15rem;
+  }
+}
+
+@media(max-width: 320px) {
+  .direction-scrollable-wrap {
+    margin-top: .5rem;
+  }
+  #map {
+    width: 18rem;
+    height: 10rem;
+  }
+}

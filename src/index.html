@@ -16,12 +16,18 @@
 </head>
 
 <body>
+  <div class="swiper-lazy-preloader-wrap">
+    <div class="swiper-lazy-preloader"></div>
+  </div>
   <div class="swiper-container container">
     <!-- Additional required wrapper -->
     <div class="swiper-wrapper">
       <!-- Slides -->
       <div class="swiper-slide">
         <div class="inner-container">
+          <div class="gallery-container">
+            <p class="content-title">갤러리</p>
+          </div>
         </div>
       </div>
 
@@ -33,16 +39,8 @@
             <p class="wedding-time">토요일, 오후 5시</p>
           </div>
           <div class="map-button-wrap">
-            <button class="map-button">
-              <img
-                src="https://firebasestorage.googleapis.com/v0/b/wedding-invi.appspot.com/o/map.svg?alt=media&token=58523110-3c51-45a9-b4cd-96504732458e"
-                alt="예식장 지도">
-            </button>
-            <button id="direction-open-button" class="direction-button">
-              <img
-                src="https://firebasestorage.googleapis.com/v0/b/wedding-invi.appspot.com/o/placeholder.svg?alt=media&token=47b3d68b-2c8f-4097-815d-be43c062d943"
-                alt="오시는 길">
-            </button>
+            <button>예식장 지도</button>
+            <button id="direction-open-button" class="direction-button">오시는 길</button>
           </div>
           <div class="confetti"></div>
           <div class="heart">♥︎</div>
@@ -52,46 +50,52 @@
       <div class="swiper-slide">
         <div class="inner-container">
           <div class="notice-container">
-            <p class="notice-title">초대합니다</p>
-            <div class="notice-text">
-              서로의 이름을 부르는 것만으로도<br />
-              사랑의 깊이를 확인할 수 있는 두 사람이<br />
-              꽃과 나무처럼 걸어와서<br />
-              서로의 모든 것이 되기 위해<br />
-              오랜 기다림 끝에 혼례식을 치르는 날<br />
-              세상은 더욱 아름다워라<br />
-              -이해인, 사랑의 사람들이여 中-<br />
-              <br />
-              5월의 어느 봄날 만난 저희 두 사람이<br />
-              부부로서 새로운 봄을 맞이하려 합니다.<br />
-              귀한 걸음하시어 세상에서 가장 아름다운 봄날<br />
-              함께 해주시면 고맙겠습니다.<br />
+            <div class="notice-wrap-like-paper"></div>
+            <div class="notice-wrap">
+              <p class="content-title">초대합니다</p>
+              <div class="notice-text">
+                서로의 이름을 부르는 것만으로도<br />
+                사랑의 깊이를 확인할 수 있는 두 사람이<br />
+                꽃과 나무처럼 걸어와서<br />
+                서로의 모든 것이 되기 위해<br />
+                오랜 기다림 끝에 혼례식을 치르는 날<br />
+                세상은 더욱 아름다워라<br />
+                -이해인, 사랑의 사람들이여 中-<br />
+                <br />
+                5월의 어느 봄날 만난 저희 두 사람이<br />
+                부부로서 새로운 봄을 맞이하려 합니다.<br />
+                귀한 걸음하시어 세상에서 가장 아름다운 봄날<br />
+                함께 해주시면 고맙겠습니다.<br />
+              </div>
+              <div class="notice-footer">
+                <p><b>오충훈, 전미정</b>의 장남 <b>성종</b></p>
+                <p><b>이호선, 변일선</b>의 장녀 <b>소미</b></p>
+              </div>
+              2020년 5월 16일 토요일 오후 5시<br />
+              북한산 포인트빌 카페
             </div>
-            <div class="notice-footer">
-              <p><b>오충훈, 전미정</b>의 장남 <b>성종</b></p>
-              <p><b>이호선, 변일선</b>의 장녀 <b>소미</b></p>
-            </div>
-            2020년 5월 16일 토요일 오후 5시<br />
-            북한산 포인트빌 카페
           </div>
         </div>
       </div>
-      ...
     </div>
-    <!-- If we need pagination -->
+    <div class="swiper-button-wrap">
+      <div class="swiper-button-next"></div>
+      <div class="swiper-button-prev"></div>
+    </div>
     <div class="swiper-pagination"></div>
   </div>
 
   <div class="direction-container">
     <div class="directions-wrap">
       <button id="direction-close-button" class="close-button">✕</button>
-      <p class="notice-title">오시는 길</p>
+      <div class="direction-title-wrap">
+        <p class="content-title">오시는 길</p>
+      </div>
       <div class="direction-scrollable-wrap">
-        <div id="map">
-          <a class="goToNaverMap" href="http://naver.me/x5KxeX8e" target="_blank">네이버에서 보기</a>
-        </div>
+        <b class="place-title">북한산 포인트빌</b>
+        <div id="map"> </div>
+        <a class="goToNaverMap" href="http://naver.me/x5KxeX8e" target="_blank">네이버에서 보기</a>
         <div class="directions-text">
-          <p><b>북한산 포인트빌</b></p>
           <p><b>주소: 경기 고양시 덕양구 북한산로 473-90</b></p>
           <p><b>일반 교통편: </b>3호선 구파발역 2번출구</p>
           버스 34번, 704번 승차 후 제3697공병부대 앞 하차
@@ -101,14 +105,15 @@
     </div>
   </div>
 
-  <!-- 
-  <div class="house-map-container">
+
+  <!-- <div class="house-map-container">
     <button id="direction-close-button" class="close-button">✕</button>
     <div class="direction-scrollable-wrap">
       <img
-        src="https://firebasestorage.googleapis.com/v0/b/wedding-invi.appspot.com/o/house-map.png?alt=media&token=1cf95ac1-c2d9-45ee-9964-9dcc39db7580"
+        src="https://firebasestorage.googleapis.com/v0/b/wedding-invi.appspot.com/o/weddinghall-map.png?alt=media&token=408b7b2f-43f3-4f7f-a465-06905860b60b"
         alt="예식장 지도">
-    </div> -->
+    </div>
+  </div> -->
 
   <div class="gallery-swiper"></div>
 

@@ -1,36 +1,34 @@
 .notice-container {
-  font-family: NanumMyeongjo;
+  font-family: NanumMyeongjo, serif;
   margin: 1rem;
-  height: calc(100% - 8rem);
+  max-height: calc(100% - 3.5rem);
   line-height: 2.5rem;
   overflow-y: scroll;
+  box-shadow: 2px 2px 3px 0 #CCC;
+  background: linear-gradient(to bottom, transparent, white);
+}
+
+.notice-wrap-like-paper {
+  height: 3rem;
   background: white;
-  padding: 2rem 0;
+  width: calc(100% - 3rem);
+  margin-left: auto;
+  position: relative;
 }
 
-.notice-title {
-  display: inline-flex;
-  align-items: center;
-  border-bottom: 1px solid #DDD;
-}
-
-.notice-title::before {
+.notice-wrap-like-paper::before {
+  position: absolute;
+  left: -3rem;
+  border: 1.5rem solid white;
+  border-left: 1.5rem solid transparent;
+  border-top: 1.5rem solid transparent;
   content: '';
-  background: url('https://firebasestorage.googleapis.com/v0/b/wedding-invi.appspot.com/o/flower-left.svg?alt=media&token=a389cb95-8a7f-4010-95a1-89ff80391dec') no-repeat;
-  background-size: contain;
-  width: 2.5rem;
-  height: 1.5rem;
-  display: inline-block;
+  box-shadow: 1px 1px 1rem 0 #AAA;
 }
 
-.notice-title::after {
-  content: '';
-  background: url('https://firebasestorage.googleapis.com/v0/b/wedding-invi.appspot.com/o/flower-right.svg?alt=media&token=eaff74a2-5ef7-472b-9fa1-a45e1ea16399') no-repeat;
-  background-size: contain;
-  background-position: right;
-  width: 2.5rem;
-  height: 1.5rem;
-  display: inline-block;
+.notice-wrap {
+  background: white;
+  padding-bottom: 2rem;
 }
 
 .notice-text {

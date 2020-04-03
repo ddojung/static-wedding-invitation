@@ -5,24 +5,40 @@ import './functions/directionModal';
 
 import Swiper from 'swiper';
 
-new Swiper('.container', {
+const swiper = new Swiper('.container', {
   direction: 'horizontal',
   loop: false,
   pagination: {
     el: '.swiper-pagination',
   },
-
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+  },
   initialSlide: 1,
 });
+
+if (swiper) {
+  document.querySelector<HTMLDivElement>('.swiper-lazy-preloader-wrap')!.style.display = 'none';
+}
+
 
 /** 
  * Naver Map
  */
-const mapOptions = {
+const mapOptions: naver.maps.MapOptions = {
   useStyleMap: true,
   center: new naver.maps.LatLng(37.668253, 126.953348),
   zoom: 15,
 };
-
 const map = new naver.maps.Map('map', mapOptions);
-new naver.maps.Marker({ map, position: { lat: 37.668253, lng: 126.953348 } });
+
+const markerOptions: naver.maps.MarkerOptions = {
+  map,
+  position: { lat: 37.668253, lng: 126.953348 },
+  icon: {
+    url: 'https://firebasestorage.googleapis.com/v0/b/wedding-invi.appspot.com/o/map-marker.svg?alt=media&token=dcd71850-1cd8-431e-9322-d9ba87ac948e',
+    size: new naver.maps.Size(35, 35),
+  }
+};
+new naver.maps.Marker(markerOptions);

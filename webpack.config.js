@@ -38,7 +38,7 @@ module.exports = {
         },
       },
       {
-        test: /\.(ttf|eot|woff|woff2)$/,
+        test: /\.(ttf|otf|eot|woff|woff2)$/,
         loader: 'url-loader',
         options: {
           name: 'fonts/[name].[ext]'
