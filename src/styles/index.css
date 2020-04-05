@@ -1,29 +1,10 @@
+@import './fonts.css';
 @import './direction.css';
 @import './main.css';
 @import './notice.css';
 @import './heart.css';
 @import './gallery.css';
-@font-face {
-  font-family: 'NanumMyeongjo';
-  src: url('../../assets/fonts//NanumMyeongjo.ttf') format('truetype'), url('../../assets/fonts//NanumMyeongjo.otf') format('opentype');
-}
-
-@font-face {
-  font-family: 'Saenal';
-  src: url('../../assets/fonts//Saenal.ttf') format('truetype');
-}
-
-@font-face {
-  font-family: 'NanumSquare';
-  src: url('../../assets/fonts//NanumSquareRoundB.ttf') format('truetype');
-  font-weight: 700;
-}
-
-@font-face {
-  font-family: 'NanumSquare';
-  src: url('../../assets/fonts//NanumSquareRoundR.ttf') format('truetype');
-}
-
+@import './weddingHallMap.css';
 html, body, main {
   height: 100%;
   margin: 0;
@@ -72,6 +53,7 @@ p {
 .swiper-button-wrap>.swiper-button-next, .swiper-button-wrap>.swiper-button-prev {
   color: #fff;
   user-select: none;
+  outline: none;
 }
 
 .swiper-button-prev.swiper-button-disabled, .swiper-button-next.swiper-button-disabled {
@@ -110,4 +92,24 @@ p {
 
 .swiper-lazy-preloader {
   --swiper-preloader-color: gray;
+}
+
+.fixed-container {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  z-index: 10;
+  background: #0000009c;
+  display: none;
+  opacity: 0;
+  transition: all 1s;
+}
+
+.visible-fixed-container {
+  display: block;
+}
+
+.opacity-fixed-container {
+  opacity: 1;
 }

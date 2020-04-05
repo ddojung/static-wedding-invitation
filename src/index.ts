@@ -1,7 +1,8 @@
 import 'swiper/css/swiper.css';
 
 import './styles/index.css';
-import './functions/directionModal';
+import './functions/fixedContainerModal';
+import './functions/noticeScrollGuide';
 
 import Swiper from 'swiper';
 

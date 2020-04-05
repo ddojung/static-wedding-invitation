@@ -1,0 +1,25 @@
+@font-face {
+  font-family: 'NanumMyeongjo';
+  src: url('../../assets/fonts//NanumMyeongjo.ttf') format('truetype'), url('../../assets/fonts//NanumMyeongjo.otf') format('opentype');
+}
+
+@font-face {
+  font-family: 'Saenal';
+  src: url('../../assets/fonts//Saenal.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'NanumSquare';
+  src: url('../../assets/fonts//NanumSquareRoundB.ttf') format('truetype');
+  font-weight: 700;
+}
+
+@font-face {
+  font-family: 'NanumSquare';
+  src: url('../../assets/fonts//NanumSquareRoundR.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Amsterdam';
+  src: url('../../assets/fonts/Amsterdam.ttf') format('truetype');
+}

@@ -1,0 +1,110 @@
+.wedding-hall-map-wrap {
+  width: 100%;
+  height: 100%;
+  max-width: 40rem;
+  margin: 0 auto;
+  position: relative;
+  background: linear-gradient(to bottom, #B6F1FE 50%, #7ECE79 50%);
+}
+
+.wedding-hall-map-img {
+  width: 100%;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.close-button#wedding-hall-close-button {
+  top: 2rem;
+  right: 1.5rem;
+  color: #555;
+}
+
+.clickable-stuff {
+  position: absolute;
+  top: 50%;
+}
+
+.photozone {
+  width: 25%;
+  transform: translateY(-63%);
+  animation: photozone 2s infinite ease-in-out;
+}
+
+.gallery1 {
+  width: 15%;
+  left: 50%;
+  transform: translate(-150%, 10%);
+  animation: gallery1 2s infinite ease-in-out;
+}
+
+.gallery2 {
+  width: 15%;
+  left: 50%;
+  transform: translate(-119%, 62%);
+}
+
+.bride-room {
+  width: 25%;
+  left: 50%;
+  transform: translate(-20%, 45%);
+  animation: brideRoom 1.5s infinite;
+}
+
+.second-stage {
+  width: 32%;
+  left: 50%;
+  transform: translate(-35%, -120%);
+  animation: secondStage 1.5s infinite ease-in-out;
+}
+
+@keyframes photozone {
+  0% {
+    transform: translateY(-63%) rotate(5deg);
+  }
+  50% {
+    transform: translateY(-63%) rotate(-5deg);
+  }
+  100% {
+    transform: translateY(-63%) rotate(5deg);
+  }
+}
+
+@keyframes gallery1 {
+  0% {
+    transform: translate(-150%, 10%) scale(0.9);
+    opacity: 0.7;
+  }
+  50% {
+    transform: translate(-150%, 10%);
+    opacity: 1;
+  }
+  100% {
+    transform: translate(-150%, 10%) scale(0.9);
+    opacity: 0.7;
+  }
+}
+
+@keyframes brideRoom {
+  0% {
+    transform: translate(-20%, 45%) rotate(5deg);
+  }
+  50% {
+    transform: translate(-20%, 45%) rotate(-5deg);
+  }
+  100% {
+    transform: translate(-20%, 45%) rotate(5deg);
+  }
+}
+
+@keyframes secondStage {
+  0% {
+    transform: translate(-35%, -120%) scale(0.9);
+  }
+  50% {
+    transform: translate(-35%, -120%) scale(1.05);
+  }
+  100% {
+    transform: translate(-35%, -120%) scale(0.9);
+  }
+}

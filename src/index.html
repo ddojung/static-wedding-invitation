@@ -39,7 +39,7 @@
             <p class="wedding-time">토요일, 오후 5시</p>
           </div>
           <div class="map-button-wrap">
-            <button>예식장 지도</button>
+            <button id="wedding-hall-open-button">예식장 지도</button>
             <button id="direction-open-button" class="direction-button">오시는 길</button>
           </div>
           <div class="confetti"></div>
@@ -74,6 +74,7 @@
               2020년 5월 16일 토요일 오후 5시<br />
               북한산 포인트빌 카페
             </div>
+            <div class="notice-scroll-guide"></div>
           </div>
         </div>
       </div>
@@ -85,7 +86,7 @@
     <div class="swiper-pagination"></div>
   </div>
 
-  <div class="direction-container">
+  <div id="direction-container" class="fixed-container">
     <div class="directions-wrap">
       <button id="direction-close-button" class="close-button">✕</button>
       <div class="direction-title-wrap">
@@ -106,14 +107,36 @@
   </div>
 
 
-  <!-- <div class="house-map-container">
-    <button id="direction-close-button" class="close-button">✕</button>
-    <div class="direction-scrollable-wrap">
-      <img
-        src="https://firebasestorage.googleapis.com/v0/b/wedding-invi.appspot.com/o/weddinghall-map.png?alt=media&token=408b7b2f-43f3-4f7f-a465-06905860b60b"
-        alt="예식장 지도">
+  <div id="wedding-hall-map-container" class="fixed-container">
+    <div class="wedding-hall-map-wrap">
+      <button id="wedding-hall-close-button" class="close-button">✕</button>
+      <img class="wedding-hall-map-img"
+        src="https://firebasestorage.googleapis.com/v0/b/wedding-invi.appspot.com/o/hall%2Fbackground-hall.png?alt=media&token=769af0b4-1a03-437f-84ce-92e8e1ad0c0b"
+        alt="">
+
+      <!-- Clickable Img  -->
+      <img class="clickable-stuff photozone"
+        src="https://firebasestorage.googleapis.com/v0/b/wedding-invi.appspot.com/o/hall%2Fphoto-experience.png?alt=media&token=884989e6-c00e-468a-80d4-93a3cb5fd503"
+        alt="포토존">
+      <img class="clickable-stuff gallery1"
+        src="https://firebasestorage.googleapis.com/v0/b/wedding-invi.appspot.com/o/hall%2Fgallery1.png?alt=media&token=f4095aab-6c0e-42b4-a11b-5c37c3622647"
+        alt="갤러리1">
+      <img class="clickable-stuff gallery2"
+        src="https://firebasestorage.googleapis.com/v0/b/wedding-invi.appspot.com/o/hall%2Fgallery2.png?alt=media&token=4baeaa63-d6c7-4a91-8d82-f902be54f7bb"
+        alt="갤러리2">
+      <img class="clickable-stuff bride-room"
+        src="https://firebasestorage.googleapis.com/v0/b/wedding-invi.appspot.com/o/hall%2Fbride.png?alt=media&token=3e4abb6c-f1a2-4c7e-8793-6d7bfc71813b"
+        alt="신부대기실">
+      <img class="clickable-stuff second-stage"
+        src="https://firebasestorage.googleapis.com/v0/b/wedding-invi.appspot.com/o/hall%2Fsecond-stage.png?alt=media&token=ad6c7120-d0e1-4db0-9291-d44babad99e9"
+        alt="2부 공간">
+      <!-- Clickable Img -->
+
+      <img class="wedding-hall-map-img"
+        src="https://firebasestorage.googleapis.com/v0/b/wedding-invi.appspot.com/o/hall%2Ffrontground-hall.png?alt=media&token=7a382fe8-c93d-4c26-bfa0-c36b6ac699ec"
+        alt="">
     </div>
-  </div> -->
+  </div>
 
   <div class="gallery-swiper"></div>
 
