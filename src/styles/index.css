@@ -10,15 +10,26 @@ html, body, main {
   margin: 0;
 }
 
+html {
+  font-size: 16px;
+}
+
 @media (max-width: 700px) {
   html {
     font-size: 14px;
   }
 }
 
+@media (max-width: 320px) {
+  html {
+    font-size: 12px;
+  }
+}
+
 body {
   background: antiquewhite;
   font-family: NanumMyeongjo, serif;
+  font-size: 1rem;
 }
 
 p {
@@ -44,20 +55,46 @@ p {
 }
 
 .swiper-button-wrap {
-  max-width: 46rem;
+  color: #fff;
+  max-width: 40rem;
   position: relative;
   top: -50%;
   margin: 0 auto;
+  z-index: 1;
 }
 
-.swiper-button-wrap>.swiper-button-next, .swiper-button-wrap>.swiper-button-prev {
-  color: #fff;
+.main-swiper-next, .main-swiper-prev {
   user-select: none;
   outline: none;
+  transition: all 1.5s;
 }
 
-.swiper-button-prev.swiper-button-disabled, .swiper-button-next.swiper-button-disabled {
-  color: transparent;
+.main-swiper-next::after {
+  content: '';
+  width: 2rem;
+  height: 2rem;
+  display: inline-block;
+  border-top: 2px solid;
+  border-right: 2px solid;
+  transform: rotate(45deg);
+  position: absolute;
+  right: 1.5rem;
+}
+
+.main-swiper-prev::before {
+  content: '';
+  width: 2rem;
+  height: 2rem;
+  display: inline-block;
+  border-left: 2px solid;
+  border-bottom: 2px solid;
+  transform: rotate(45deg);
+  position: absolute;
+  left: 1.5rem;
+}
+
+.main-swiper-prev.swiper-button-disabled::before, .main-swiper-next.swiper-button-disabled::after {
+  opacity: 0.3;
 }
 
 .content-title {
@@ -103,7 +140,7 @@ p {
   background: #0000009c;
   display: none;
   opacity: 0;
-  transition: all 1s;
+  transition: all 500ms;
 }
 
 .visible-fixed-container {

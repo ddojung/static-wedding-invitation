@@ -69,13 +69,3 @@
     height: 15rem;
   }
 }
-
-@media(max-width: 320px) {
-  .direction-scrollable-wrap {
-    margin-top: .5rem;
-  }
-  #map {
-    width: 18rem;
-    height: 10rem;
-  }
-}

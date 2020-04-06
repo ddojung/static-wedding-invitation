@@ -3,6 +3,7 @@ import 'swiper/css/swiper.css';
 import './styles/index.css';
 import './functions/fixedContainerModal';
 import './functions/noticeScrollGuide';
+import './functions/weddingHallGuide';
 
 import Swiper from 'swiper';
 
@@ -13,8 +14,8 @@ const swiper = new Swiper('.container', {
     el: '.swiper-pagination',
   },
   navigation: {
-    nextEl: '.swiper-button-next',
-    prevEl: '.swiper-button-prev',
+    nextEl: '.main-swiper-next',
+    prevEl: '.main-swiper-prev',
   },
   initialSlide: 1,
 });
@@ -22,6 +23,22 @@ const swiper = new Swiper('.container', {
 if (swiper) {
   document.querySelector<HTMLDivElement>('.swiper-lazy-preloader-wrap')!.style.display = 'none';
 }
+
+const swiperButtonWrap = document.querySelector<HTMLDivElement>('.swiper-button-wrap');
+const swiperNextButton = document.querySelector<HTMLDivElement>('.main-swiper-next');
+const swiperPrevButton = document.querySelector<HTMLDivElement>('.main-swiper-prev');
+
+
+if (swiperButtonWrap && swiperNextButton && swiperPrevButton) {
+  swiperNextButton.addEventListener('click', () => {
+    swiper.activeIndex === 2 ? (swiperButtonWrap.style.color = '#DDD') : (swiperButtonWrap.style.color = '#FFF');
+  });
+  swiperPrevButton.addEventListener('click', () => {
+    swiper.activeIndex === 0 ? (swiperButtonWrap.style.color = '#BBB') : (swiperButtonWrap.style.color = '#FFF');
+
+  });
+}
+
 
 
 /** 

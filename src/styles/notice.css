@@ -5,7 +5,7 @@
   line-height: 2.5rem;
   overflow-y: scroll;
   box-shadow: 2px 2px 3px 0 #CCC;
-  background: linear-gradient(to bottom, transparent, white);
+  background: linear-gradient(to bottom, transparent 50%, white 50%);
 }
 
 .notice-wrap-like-paper {

@@ -15,9 +15,44 @@
 }
 
 .close-button#wedding-hall-close-button {
-  top: 2rem;
+  top: 8rem;
   right: 1.5rem;
   color: #555;
+  z-index: 20;
+}
+
+.wedding-hall-map-caption {
+  width: 100%;
+  text-align: center;
+  color: #245bbf;
+  font-family: Amsterdam;
+  font-size: 2rem;
+  font-weight: 700;
+  letter-spacing: .2rem;
+  position: absolute;
+  top: 10rem;
+  z-index: 20;
+}
+
+.wedding-hall-map-caption p {
+  font-size: 1.2rem;
+  color: #444;
+  margin-top: .5rem;
+}
+
+.frontground-welcome {
+  position: absolute;
+  top: 50%;
+  transform: translate(50%, 17%);
+  width: 15%;
+}
+
+.frontground-hill {
+  position: absolute;
+  width: 55%;
+  left: 50%;
+  top: 50%;
+  transform: translate(-30%, 105%);
 }
 
 .clickable-stuff {

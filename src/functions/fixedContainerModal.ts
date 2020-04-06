@@ -15,9 +15,9 @@ const closeFixedContainer = (container: HTMLDivElement | null) => {
   container.style.overflow = 'hidden';
 
   container.classList.remove('opacity-fixed-container');
-  setTimeout(() => { // transition에 의해 1s 후 opacity가 0이되면 none 처리
+  setTimeout(() => { // transition에 의해 500ms 후 opacity가 0이되면 none 처리
     container.classList.remove('visible-fixed-container');
-  }, 1000);
+  }, 500);
 };
 
 
