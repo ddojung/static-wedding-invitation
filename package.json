@@ -4,7 +4,7 @@
   "description": "wedding invitation mobile version",
   "main": "index.js",
   "scripts": {
-    "build": "rm -rf public && NODE_ENV=production webpack",
+    "build": "rm -rf docs && NODE_ENV=production webpack",
     "dev": "webpack-dev-server"
   },
   "author": "ddojung",
