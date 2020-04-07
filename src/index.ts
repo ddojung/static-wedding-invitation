@@ -58,14 +58,14 @@ swiper.on('slideChange', () => {
  */
 const mapOptions: naver.maps.MapOptions = {
   useStyleMap: true,
-  center: new naver.maps.LatLng(37.668253, 126.953348),
+  center: new naver.maps.LatLng(37.6682521, 126.9495151),
   zoom: 15,
 };
 const map = new naver.maps.Map('map', mapOptions);
 
 const markerOptions: naver.maps.MarkerOptions = {
   map,
-  position: { lat: 37.668253, lng: 126.953348 },
+  position: { lat: 37.6675781, lng: 126.9529092 },
   icon: {
     url: 'https://firebasestorage.googleapis.com/v0/b/wedding-invi.appspot.com/o/map-marker.svg?alt=media&token=dcd71850-1cd8-431e-9322-d9ba87ac948e',
     size: new naver.maps.Size(35, 35),

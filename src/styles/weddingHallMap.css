@@ -47,12 +47,12 @@
   height: 0;
   text-align: center;
   display: block;
-  transition: all 500ms;
+  transition: all 250ms;
   z-index: 100;
 }
 
 .float-toast {
-  bottom: 6rem;
+  bottom: 5rem;
   height: auto;
 }
 

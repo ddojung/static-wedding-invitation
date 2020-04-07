@@ -39,19 +39,22 @@
   display: block;
 }
 
-.goToNaverMap {
-  background: white;
+.goToMapAppWrap {
+  display: flex;
+  justify-content: space-between;
+}
+
+.goToMapApp {
   text-decoration: none;
-  color: #20c120;
   font-family: NauumSquare;
-  font-weight: 700;
-  font-size: 1.1rem;
   border: 1px solid;
   padding: .5rem;
-  display: block;
+  display: inline-block;
   text-align: center;
   margin-top: .5rem;
   border-radius: .4rem;
+  width: 100%;
+  margin: .5rem .2rem;
 }
 
 @media(max-width: 500px) {
