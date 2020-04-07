@@ -43,15 +43,16 @@
   cursor: pointer;
   border: none;
   background: #ffffff;
-  color: black;
+  color: #555;
   font-size: 2rem;
-  padding: .5rem 2rem;
+  padding: .3rem 2rem .5rem;
   margin: .5rem;
-  border-radius: 10rem;
-  box-shadow: 0 2px 10px 0 rgb(193, 188, 182);
+  border-radius: 0.2rem;
+  box-shadow: 0 1px 1px 0 rgba(60, 64, 67, .08), 0 1px 3px 1px rgba(60, 64, 67, .16);
   font-family: Amsterdam;
   font-weight: 700;
   font-size: 2rem;
+  letter-spacing: .1rem;
 }
 
 .map-button-wrap>button:active {
@@ -73,10 +74,10 @@
 
 .close-button {
   position: absolute;
-  top: 2rem;
-  right: 1.5rem;
+  top: 1rem;
+  right: 1rem;
   color: #555;
-  font-size: 1.7rem;
+  font-size: 1.4rem;
   border: none;
   background: transparent;
   cursor: pointer;

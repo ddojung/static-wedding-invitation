@@ -15,7 +15,7 @@
 }
 
 .close-button#wedding-hall-close-button {
-  top: 8rem;
+  top: 5rem;
   right: 1.5rem;
   color: #555;
   z-index: 20;
@@ -30,7 +30,7 @@
   font-weight: 700;
   letter-spacing: .2rem;
   position: absolute;
-  top: 10rem;
+  top: 7rem;
   z-index: 20;
 }
 
@@ -38,6 +38,38 @@
   font-size: 1.2rem;
   color: #444;
   margin-top: .5rem;
+}
+
+.toast-container {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 0;
+  text-align: center;
+  display: block;
+  transition: all 500ms;
+  z-index: 100;
+}
+
+.float-toast {
+  bottom: 6rem;
+  height: auto;
+}
+
+.toast {
+  display: inline-block;
+  padding: .7rem 1.5rem .8rem;
+  margin: 0 1rem;
+  min-width: 20rem;
+  background: #0000007a;
+  border-radius: .2rem;
+  box-shadow: 0 0.5rem 1rem -0.5rem #000000d9;
+  font-family: Amsterdam;
+  font-size: 1.2rem;
+  color: white;
+  text-align: left;
+  white-space: pre-wrap;
+  line-height: 1.5rem;
 }
 
 .frontground-welcome {
@@ -70,13 +102,14 @@
   width: 15%;
   left: 50%;
   transform: translate(-150%, 10%);
-  animation: gallery1 2s infinite ease-in-out;
+  animation: gallery1 1s infinite ease-in-out;
+  z-index: 10;
 }
 
 .gallery2 {
   width: 15%;
   left: 50%;
-  transform: translate(-119%, 62%);
+  transform: translate(-119%, 70%);
 }
 
 .bride-room {
@@ -108,15 +141,12 @@
 @keyframes gallery1 {
   0% {
     transform: translate(-150%, 10%) scale(0.9);
-    opacity: 0.7;
   }
   50% {
     transform: translate(-150%, 10%);
-    opacity: 1;
   }
   100% {
     transform: translate(-150%, 10%) scale(0.9);
-    opacity: 0.7;
   }
 }
 

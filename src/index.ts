@@ -7,6 +7,8 @@ import './functions/weddingHallGuide';
 
 import Swiper from 'swiper';
 
+import { noticeContainer } from './functions/noticeScrollGuide';
+
 const swiper = new Swiper('.container', {
   direction: 'horizontal',
   loop: false,
@@ -28,16 +30,26 @@ const swiperButtonWrap = document.querySelector<HTMLDivElement>('.swiper-button-
 const swiperNextButton = document.querySelector<HTMLDivElement>('.main-swiper-next');
 const swiperPrevButton = document.querySelector<HTMLDivElement>('.main-swiper-prev');
 
+swiper.on('slideChange', () => {
+  if (!swiperButtonWrap || !swiperNextButton || !swiperPrevButton) {
+    return;
+  }
 
-if (swiperButtonWrap && swiperNextButton && swiperPrevButton) {
-  swiperNextButton.addEventListener('click', () => {
-    swiper.activeIndex === 2 ? (swiperButtonWrap.style.color = '#DDD') : (swiperButtonWrap.style.color = '#FFF');
-  });
-  swiperPrevButton.addEventListener('click', () => {
-    swiper.activeIndex === 0 ? (swiperButtonWrap.style.color = '#BBB') : (swiperButtonWrap.style.color = '#FFF');
+  if (swiper.activeIndex === 2) {
+    noticeContainer?.scrollTo(0, 0);
+    swiperButtonWrap.style.color = '#DDD';
 
-  });
-}
+    return;
+  }
+  if (swiper.activeIndex === 0) {
+    swiperButtonWrap.style.color = '#BBB';
+
+    return;
+  }
+
+  swiperButtonWrap.style.color = '#FFF';
+});
+
 
 
 

@@ -1,4 +1,4 @@
-const noticeContainer = document.querySelector<HTMLDivElement>('.notice-container');
+export const noticeContainer = document.querySelector<HTMLDivElement>('.notice-container');
 const guideBox = document.querySelector<HTMLDivElement>('.notice-scroll-guide');
 
 
@@ -18,4 +18,3 @@ guideBox?.addEventListener('click', () => {
     });
   }
 });
-

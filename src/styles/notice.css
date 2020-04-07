@@ -54,7 +54,7 @@
   padding-bottom: .5rem;
   border-top: 1px solid #DDD;
   overflow: hidden;
-  transition: height .5s;
+  transition: height 300ms;
 }
 
 .notice-scroll-guide::before {
@@ -70,4 +70,5 @@
 .hide-notice-scroll-guide {
   height: 0;
   padding-bottom: 0;
+  border: none;
 }
