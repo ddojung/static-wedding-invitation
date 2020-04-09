@@ -1,5 +1,5 @@
 
-const openFixedContainer = (container: HTMLDivElement | null, openButton: HTMLButtonElement | null) => {
+export const openFixedContainer = (container: HTMLDivElement | null, openButton: HTMLElement | null) => {
   if (!container || !openButton) {
     return;
   }
@@ -8,7 +8,7 @@ const openFixedContainer = (container: HTMLDivElement | null, openButton: HTMLBu
     container.classList.add('opacity-fixed-container');
   });
 };
-const closeFixedContainer = (container: HTMLDivElement | null) => {
+export const closeFixedContainer = (container: HTMLDivElement | null) => {
   if (!container) {
     return;
   }
@@ -40,4 +40,3 @@ const weddingHallCloseButton = document.querySelector<HTMLButtonElement>('#weddi
 
 weddingHallOpenButton?.addEventListener('click', () => openFixedContainer(weddingHallContainer, weddingHallOpenButton));
 weddingHallCloseButton?.addEventListener('click', () => closeFixedContainer(weddingHallContainer));
-

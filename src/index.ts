@@ -4,6 +4,7 @@ import './styles/index.css';
 import './functions/fixedContainerModal';
 import './functions/noticeScrollGuide';
 import './functions/weddingHallGuide';
+import './functions/gallery';
 
 import Swiper from 'swiper';
 
@@ -49,9 +50,6 @@ swiper.on('slideChange', () => {
 
   swiperButtonWrap.style.color = '#FFF';
 });
-
-
-
 
 /** 
  * Naver Map

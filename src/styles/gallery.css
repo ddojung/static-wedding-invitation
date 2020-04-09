@@ -1,3 +1,33 @@
 .gallery-container {
   padding: 2rem 0;
+  height: 100%;
+}
+
+.gallery-wrap {
+  overflow-y: scroll;
+  height: calc(100% - 6rem);
+}
+
+.gallery-main-img {
+  width: 100%;
+  margin: 0 auto;
+}
+
+.gallery-main-img img {
+  width: calc(100% - 1rem);
+  margin: 2rem .5rem 0;
+}
+
+.image-container {
+  display: flex;
+  margin: .5rem;
+}
+
+.image-container img {
+  flex: 1;
+  width: calc(50% - 1rem);
+}
+
+.image-container img:last-child {
+  margin-left: 0.5rem;
 }
