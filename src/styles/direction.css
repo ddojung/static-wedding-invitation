@@ -57,6 +57,14 @@
   margin: .5rem .2rem;
 }
 
+.goToMapApp:first-child {
+  color: #ff8c00;
+}
+
+.goToMapApp:last-child {
+  color: #20c120;
+}
+
 @media(max-width: 500px) {
   .directions-wrap {
     margin: 0 1rem;

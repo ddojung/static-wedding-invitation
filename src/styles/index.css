@@ -101,6 +101,8 @@ p {
   display: inline-flex;
   align-items: center;
   border-bottom: 1px solid #DDD;
+  line-height: 2rem;
+  font-family: NanumMyeongjo;
 }
 
 .content-title::before {
