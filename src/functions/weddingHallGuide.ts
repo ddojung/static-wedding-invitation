@@ -33,7 +33,7 @@ const createToastEvent = (element: HTMLDivElement | null, message: string) => {
 };
 
 export const initWeddingHallGuide = () => {
-  createToastEvent(photozone, '포토부스\n사진 촬영 후 인화된 사진을 붙이고 방명록을 작성해주세요.\n(신랑,신부에게 하고싶은말)');
+  createToastEvent(photozone, '포토부스\n사진 촬영 후 인화된 사진을 붙이고 방명록을 작성해주세요.');
   createToastEvent(gallery, '신랑, 신부의 사진을 구경하세요.');
   createToastEvent(brideRoom, '신부 대기실입니다.\n신부에게 인사해주세요!');
   createToastEvent(secondStage, '2부 진행 공간입니다.\n다양한 이벤트가 있으니 함께해주세요.');
