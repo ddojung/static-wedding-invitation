@@ -4,11 +4,15 @@
 
 .directions-text {
   padding-left: .5rem;
-  line-height: 1.5;
+  line-height: 1.7rem;
+  color: #555;
+  margin-top: 1rem;
 }
 
-.directions-text p {
+.directions-text .title {
   margin-top: .5rem;
+  font-weight: 700;
+  color: #2e2e2e;
 }
 
 .directions-wrap {
@@ -34,9 +38,9 @@
 }
 
 .place-title {
-  padding: .5rem 1rem;
-  font-size: 1.2rem;
-  display: block;
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: #2e2e2e;
 }
 
 .goToMapAppWrap {

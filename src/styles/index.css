@@ -63,13 +63,13 @@ p {
   z-index: 1;
 }
 
-.main-swiper-next, .main-swiper-prev {
+.swiper-next, .swiper-prev {
   user-select: none;
   outline: none;
   transition: all 1.5s;
 }
 
-.main-swiper-next::after {
+.swiper-next::after {
   content: '';
   width: 2rem;
   height: 2rem;
@@ -81,7 +81,7 @@ p {
   right: 1.5rem;
 }
 
-.main-swiper-prev::before {
+.swiper-prev::before {
   content: '';
   width: 2rem;
   height: 2rem;
@@ -93,7 +93,7 @@ p {
   left: 1.5rem;
 }
 
-.main-swiper-prev.swiper-button-disabled::before, .main-swiper-next.swiper-button-disabled::after {
+.swiper-prev.swiper-button-disabled::before, .swiper-next.swiper-button-disabled::after {
   opacity: 0.3;
 }
 
