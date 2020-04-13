@@ -35,11 +35,6 @@ export const initContentsSwiper = () => {
 
       return;
     }
-    if (swiper.activeIndex === 0) {
-      swiperButtonWrap.style.color = '#BBB';
-
-      return;
-    }
 
     swiperButtonWrap.style.color = '#FFF';
   });

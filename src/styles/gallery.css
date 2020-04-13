@@ -31,9 +31,17 @@
   margin-left: 0.5rem;
 }
 
+#gallery-image-container {
+  background: #000000d9;
+}
+
 #gallery-image {
   width: 100%;
   position: absolute;
+  left: 0;
+  right: 0;
   top: 50%;
   transform: translateY(-50%);
+  max-width: 40rem;
+  margin: 0 auto;
 }
