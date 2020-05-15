@@ -84,3 +84,11 @@
     height: 15rem;
   }
 }
+
+.shuttle-time-info {
+  display: flex;
+}
+
+.shuttle-time {
+  margin-left: .5rem;
+}
